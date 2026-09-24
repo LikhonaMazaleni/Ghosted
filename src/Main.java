@@ -6,7 +6,7 @@ public class Main {
         System.out.println("Paste your bio/post text, then press Enter:");
         String bio = scanner.nextLine();
 
-        List<Rule> rules = List.of(new BirthdayRule());
+        List<Rule> rules = List.of(new BirthdayRule(), new LocationRule(), new WorkplaceRule());
         List<Flag> flags = new ArrayList<>();
 
         for (Rule rule : rules) {
